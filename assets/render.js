@@ -37,6 +37,11 @@
   if (list(T.요약).length) {
     h.push('<div class="facts">' + list(T.요약).map(function (x) { return "<span>" + esc(x) + "</span>"; }).join("") + "</div>");
   }
+  if (list(T.도식).length) {
+    h.push('<ol class="flow" aria-label="전형 단계">' + list(T.도식).map(function (x, i) {
+      return (i ? '<li class="arrow" aria-hidden="true"></li>' : "") + '<li class="box">' + fmt(x) + "</li>";
+    }).join("") + "</ol>");
+  }
   h.push('<div class="process">');
   list(T.단계).forEach(function (st) {
     var left = st.누구
