@@ -98,6 +98,7 @@
   // 하단
   h.push("<footer>");
   list(C.하단_문구).forEach(function (x) { h.push("<p>" + fmt(x) + "</p>"); });
+  if (C.팀메일) h.push('<p><a href="mailto:' + esc(C.팀메일) + '">' + esc(C.팀메일) + "</a></p>");
   if (C.채용페이지_링크) h.push('<p><a href="' + esc(C.채용페이지_링크) + '" target="_blank" rel="noopener">' + esc(C.채용페이지_이름 || C.채용페이지_링크) + "</a></p>");
   h.push("</footer></main>");
   h.push('<div class="toast" id="toast" role="status" aria-live="polite"></div>');
