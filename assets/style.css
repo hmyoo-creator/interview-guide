@@ -120,3 +120,4 @@ footer p+p{margin-top:4px}
 .flow .arrow{flex:0 0 10px;height:10px;border-top:2px solid var(--faint);border-right:2px solid var(--faint);transform:rotate(45deg);margin:0 4px 0 0}
 @media (max-width:480px){.flow{gap:4px}.flow .box{font-size:13px;padding:14px 4px;border-radius:8px}.flow .arrow{flex-basis:7px;height:7px;margin-right:3px}}
 .flow + .process{margin-top:28px}
+details p a,.intro a{color:var(--accent);text-underline-offset:2px}

@@ -14,9 +14,13 @@
     return String(s == null ? "" : s)
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   }
-  // **굵게**, 줄바꿈(\n) 처리
+  // [글자](주소) 링크, **굵게**, 줄바꿈(\n) 처리
   function fmt(s) {
-    return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\n/g, "<br>");
+    return esc(s)
+      .replace(/\[([^\]]+)\]\(((?:https?:\/\/|mailto:)[^)\s]+)\)/g, function (m, t, u) {
+        return '<a href="' + u + '"' + (u.indexOf("mailto:") === 0 ? "" : ' target="_blank" rel="noopener"') + ">" + t + "</a>";
+      })
+      .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\n/g, "<br>");
   }
   function list(a) { return Array.isArray(a) ? a : []; }
 
