@@ -63,7 +63,12 @@
 
   // 인터뷰 전 준비
   h.push('<section id="prepare"><h2>' + fmt(C.준비_제목) + '</h2><dl class="kv">');
-  list(C.준비).forEach(function (r) { h.push("<div><dt>" + esc(r[0]) + "</dt><dd>" + fmt(r[1]) + "</dd></div>"); });
+  // 전형 파일에 준비_변경이 있으면 같은 항목 이름의 설명을 그 전형에서만 바꿔요
+  var over = T.준비_변경 || {};
+  list(C.준비).forEach(function (r) {
+    var text = Object.prototype.hasOwnProperty.call(over, r[0]) ? over[r[0]] : r[1];
+    h.push("<div><dt>" + esc(r[0]) + "</dt><dd>" + fmt(text) + "</dd></div>");
+  });
   h.push("</dl></section>");
 
   // 오시는 길
