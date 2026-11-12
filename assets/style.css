@@ -121,3 +121,5 @@ footer p+p{margin-top:4px}
 @media (max-width:480px){.flow{gap:4px}.flow .box{font-size:13px;padding:14px 4px;border-radius:8px}.flow .arrow{flex-basis:7px;height:7px;margin-right:3px}}
 .flow + .process{margin-top:28px}
 details p a,.intro a{color:var(--accent);text-underline-offset:2px}
+/* 지도: 너무 크게 늘어나지 않게 */
+.map img{width:100%;max-width:520px;height:auto}

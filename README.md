@@ -45,7 +45,7 @@
 | 파일 | 위치 |
 | --- | --- |
 | `assets/logo.png` | 맨 위 회사 로고 |
-| `assets/map.jpg` | 오시는 길 지도 |
+| `assets/map.png` | 오시는 길 지도 |
 | `assets/elevator.jpg` | 도착 후 엘리베이터 사진 |
 
 ## 폴더 구조

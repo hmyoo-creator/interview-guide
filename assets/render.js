@@ -80,7 +80,7 @@
     C.카카오맵_링크 ? '<a class="act" href="' + esc(C.카카오맵_링크) + '" target="_blank" rel="noopener">카카오맵</a>' : "",
     '<button class="act" type="button" data-copy="' + esc(C.주소) + '">주소 복사</button>',
     "</div>",
-    '<figure class="map"><img src="../assets/map.jpg" alt="강남역 8번 출구에서 사무실까지 가는 길" width="1137" height="811">',
+    '<figure class="map"><img src="../assets/map.png" alt="강남역 8번 출구에서 사무실까지 가는 길" width="1137" height="811">',
     '<figcaption class="cap">' + fmt(C.지도_설명) + "</figcaption></figure></section>");
 
   // 도착 후
