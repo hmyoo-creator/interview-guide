@@ -6,7 +6,7 @@
 | --- | --- |
 | 인턴 | `사이트주소/intern` |
 | 정규직 (팀원) | `사이트주소/member` |
-| 정규직 (리더·직책자, 내부 구분용) | `사이트주소/regular-2` |
+| 정규직 (리더·직책자, 내부 구분용) | `사이트주소/member-2` |
 
 ## 문구 고치기
 
@@ -17,7 +17,7 @@
 | `content/common.js` | 세 페이지에 모두 들어가는 내용 (인사말, 준비 사항, 오시는 길, 도착 후 안내, 연락처, 공통 FAQ, 하단 문구) |
 | `content/intern.js` | 인턴 진행 방식, 인턴 전용 FAQ |
 | `content/member.js` | 정규직 진행 방식, 정규직 전용 FAQ |
-| `content/regular-2.js` | 정규직 리더(직책자) 진행 방식, 전용 FAQ — 후보자에게는 "정규직"으로만 보여요 |
+| `content/member-2.js` | 정규직 리더(직책자) 진행 방식, 전용 FAQ — 후보자에게는 "정규직"으로만 보여요 |
 
 ### GitHub에서 고치는 순서
 
@@ -52,7 +52,7 @@
 index.html          전형 선택 화면
 intern/index.html   인턴 페이지 (수정 불필요)
 member/index.html   정규직 페이지 (수정 불필요)
-regular-2/index.html 정규직 리더(직책자) 페이지 (수정 불필요)
+member-2/index.html 정규직 리더(직책자) 페이지 (수정 불필요)
 content/            ← 문구는 여기서만 고쳐요
 assets/             로고·사진, 디자인(style.css), 화면 그리는 코드(render.js)
 ```

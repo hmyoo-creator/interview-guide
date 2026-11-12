@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/regular-2", "destination": "/member-2", "permanent": true },
+    { "source": "/regular-2/", "destination": "/member-2/", "permanent": true }
+  ]
+}
